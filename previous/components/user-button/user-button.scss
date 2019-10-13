@@ -1,0 +1,112 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+.user-button{
+  position: relative;
+  font-size: 12px;
+  padding: 0px 15px 0px 10px;
+  display: inline-flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  &__image{
+    display: block;
+    width: 17px;
+  }
+  &__description{
+    position: relative;
+    transition-duration: 0.3s;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 7px;
+      right: -27px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid black;
+      border-left: 5px solid rgba(0, 0, 0, 0);
+      border-right: 5px solid rgba(0, 0, 0, 0);
+    }
+    &:hover{
+      color: #14B0E9;
+    }
+  }
+
+  .hidden:checked ~ .menu{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 23px;
+    list-style: none;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    background-color: white;
+    &__anchor{
+      display: flex;
+      position: relative;
+      padding: 5px 0px 5px 45px;
+      text-decoration: none;
+      color: #34383C;
+      &:hover{
+        color: white;
+        background-color: #14B0E9;
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 15px;
+        top: 0;
+      }
+    }
+    &__anchor{
+      &.affiliate:hover::before{
+        background: url(../../img/affiliate-white.svg) no-repeat 50% 50%;
+      }
+      &.options:hover::before{
+        background: url(../../img/options-white.svg) no-repeat 50% 50%;
+      }
+      &.password:hover::before{
+        background: url(../../img/password-white.svg) no-repeat 50% 50%;
+      }
+      &.logout:hover::before{
+        background: url(../../img/logout-white.svg) no-repeat 50% 50%;
+      }
+    }
+    .affiliate::before{
+      background: url(../../img/affiliate.svg) no-repeat 50% 50%;
+    }
+    .options::before{
+      background: url(../../img/options.svg) no-repeat 50% 50%;
+    }
+    .logout::before{
+      background: url(../../img/logout.svg) no-repeat 50% 50%;
+    }
+    .password::before{
+      background: url(../../img/password.svg) no-repeat 50% 50%;
+    }
+  }
+
+  .hidden:checked ~ &__description::after{
+    border-top: none;
+    border-bottom: 5px solid black;
+  }
+}
+
+
+.hidden{
+  display: none;
+}
+
+.border-top{
+  border-top: 1px solid #e4e4e4;
+}

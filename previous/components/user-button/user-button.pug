@@ -1,0 +1,15 @@
+mixin userButton()
+  label.user-button
+    input(type="checkbox").hidden
+    img(src=require("@img/human.svg")).user-button__image
+    span.user-button__description 
+      | Hello, mail@admin.ru
+    ul.menu
+      li.menu__submenu
+        a(href="#").menu__anchor.affiliate Affiliate
+      li.menu__submenu
+        a(href="#").menu__anchor.password Password
+      li.menu__submenu
+        a(href="#").menu__anchor.options Options
+      li.menu__submenu
+        a(href="#").menu__anchor.border-top.logout Logout
