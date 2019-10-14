@@ -4,13 +4,37 @@ const path = require("path"),
       {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 
+const source = {
+  "account-information": "./account-information/account-information.js",
+  "affiliate": "./affiliate/affiliate.js",
+  "android-manual": "./android-manual/android-manual.js",
+  "balance": "./balance/balance.js",
+  "change-password": "./change-password/change-password.js",
+  "home": "./home/home.js",
+  "package-list": "./package-list/package-list.js",
+  "purchase-history": "./purchase-history/purchase-history.js",
+  "server-manager": "./server-manager/server-manager.js",
+  "support": "./support/support.js"
+}
+
+const htmlPaths = [];
+
+for (prop in source){
+  htmlPaths.push(new HtmlWebpackPlugin(
+    {
+      template: prop + "/" + prop + ".pug",
+      filename: prop + "/index.html",
+      chunks: [prop]
+    }
+  ))
+}
+
 module.exports = {
   mode: "development",
-  entry: {
-    "main": "@pages/main.js"
-  },
+  context: path.resolve(__dirname, "./previous/pages"),
+  entry: source,
   output: {
-    filename: "[name].js",
+    filename: "[name]/main.js",
     path: path.resolve(__dirname, "build")
   },
   module:{
@@ -40,7 +64,9 @@ module.exports = {
         use: {
           loader: "file-loader",
           options: {
-            name: 'img/[name].[ext]'
+            name: "[name].[ext]",
+            outputPath: "/img/",
+            publicPath: "../img"
           }
         }
       }
@@ -58,12 +84,9 @@ module.exports = {
     }
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "previous/pages/index.pug",
-      filename: "index.html"
-    }),
+    ...htmlPaths,
     new MiniCssExtractPlugin({
-      filename: "main.css"
+      filename: "[name]/main.css"
     }),
     new CleanWebpackPlugin({
       path: path.resolve(__dirname, "build")

@@ -1,3 +1,5 @@
+include ../logo/logo.pug
+
 block menu
   div.main-menu
     +logo()
@@ -6,6 +8,8 @@ block menu
         input(type="radio", name="menu").hidden
         span.link.title-submenu Account Manager
         ul.submenu-list
+          li 
+            a(href="#").link Home
           li 
             a(href="#").link Account Information
           li
@@ -27,3 +31,14 @@ block menu
             a(href="#").link Linux
           li
             a(href="#").link Mac OS X
+      label.submenu
+        input(type="radio", name="menu").hidden
+        span.link.title-submenu Store
+        ul.submenu-list
+          li 
+            a(href="#").link Top Up & Balance
+          li
+            a(href="#").link Package List
+          li
+            a(href="#").link Purchase history
+      a(href="#").link Support & Help      
