@@ -1,0 +1,13 @@
+@import "../../variables/_vars.scss";
+.logo-mobile{
+  display: none;
+}
+
+@media screen and (max-width: $mobile){
+  .logo-mobile{
+    display: block;
+    img{
+      width: 210px;
+    }
+  }
+}

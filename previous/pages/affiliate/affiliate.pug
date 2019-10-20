@@ -1,0 +1,54 @@
+extends ../root/root.pug
+include ../../components/clipboard-input/clipboard-input.pug
+
+
+block title
+  title Affiliate
+  
+block content
+  div.main-block
+    h2.page-header
+      | Affiliate
+    div.content-block
+      | Each time you invite one user to register:
+      br
+      br
+      | You will receive a 
+      mark 2Gb 
+      | traffic reward.
+      br
+      br
+      | The other party will receive a 
+      mark 1$
+      | bonus in seed funding.
+      br
+      br
+      | You will also receive a 
+      mark 20% 
+      | discount on the replenishment amount of the other party when replenishing the account.
+      br
+      br
+      | Received discount: 
+      mark 0$
+  div.main-block
+    h2.page-header
+      | Invitation Link
+    div.content-block
+      | Number of invitations remaining: 
+      mark 10
+      br
+      br
+      | Send an invitation link to someone in need, invite others to sign up, please send the following link to the invitee
+      br
+      br
+      +clipboardInput("http://vpnm.org/#/auth/register?code=3I6h", "Copy to Clipboard")
+  div.main-block
+    h2.page-header
+      | Invited User List
+    div.content-block
+      table.table-users
+        thead
+          tr.table-users__row
+            th.table-users__title #
+            th.table-users__title Invited User ID
+            th.table-users__title Discount received

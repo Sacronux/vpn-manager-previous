@@ -1,0 +1,79 @@
+mixin table()
+  div.table-information
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Balance
+      div.righthand-row
+        input(type="text", readonly, value="0.00 $").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Used last month
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="0.00% 0B").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Traffic was used today 
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="0B").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Account level
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="Regular user").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Number of online devices 
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="0").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Speed Limit 
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="Port rate...").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Subscription Expiration Time  
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="2029-10-08 03:08:26").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Last connection 
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="???").table-information__input
+    div.table-information__row
+      div.lefthand-row
+        span.table-information__text Last time I took a daily bonus  
+        div.help
+          img(src=require("@img/help.svg")).help__symbol
+          div.help__hint
+            span.help__text This parameter depends on the Account level
+      div.righthand-row
+        input(type="text", readonly, value="Never").table-information__input

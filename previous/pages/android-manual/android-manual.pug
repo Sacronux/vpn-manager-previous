@@ -1,0 +1,41 @@
+extends ../root/root.pug
+include ../../components/clipboard-input/clipboard-input.pug
+include ../../components/modal-image/modal-image.pug
+
+block title
+  title Android manual
+  
+block content
+  div.main-block
+    h2.page-header
+      | Manuals - Android
+    div.content-block
+      pre
+        |           Download from Google Play
+        br
+        |           Direct link to Shadowsocks For Android
+      br
+      br
+      |1. Download and install from Google Play or download by direct link apk.
+      br
+      |2. After installation, start the application and click on the add server icon in the upper right. Choose Scan QR code, or Import from Clipboard*. QR-Code and the "Copy Settings" button for each server are in your personal account.
+      br
+      |3. Select the desired server and connect to it on the button in the center. Add the rest of the servers on the same principle.*
+      br
+      br
+      b More fine tuning of the program:
+      br
+      br
+      | 4. Click the "pencil" located on the right. Disable the "IPv6 Route" option. Instagram with this option may not work.
+      br
+      | 5. Select Bypass LAN & mainland China in the "Route" option.
+      br
+      |6. Enable option Send DNS over UDP.
+      br
+      br
+      +clipboardInput("https://vpnm.org/link/yDaCe2e6TfliMN4J?mu=2", "Copy to Clipboard")
+    div.content-block.gallery
+        +modalImage(require("../../img/screenshot-1.png"))
+        +modalImage(require("../../img/screenshot-1.png"))
+        +modalImage(require("../../img/screenshot-1.png"))
+        +modalImage(require("../../img/screenshot-1.png"))

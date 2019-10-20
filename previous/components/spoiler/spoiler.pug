@@ -1,0 +1,35 @@
+include ../../components/pen-button/pen-button.pug
+mixin spoiler(spoiler)
+  label.spoiler
+    input(type="checkbox").hidden
+    span.spoiler__title="ID " + spoiler.id
+    div.spoiler__content
+      div.spoiler__content-block
+        div.left-hand
+          | ID
+        div.right-hand=spoiler.id
+      div.spoiler__content-block
+        div.left-hand
+          | Date
+        div.right-hand=spoiler.date
+      div.spoiler__content-block
+        div.left-hand
+          | Product name
+        div.right-hand=spoiler.name
+      div.spoiler__content-block
+        div.left-hand
+          | Detail
+        div.right-hand=spoiler.detail
+      div.spoiler__content-block
+        div.left-hand
+          | Price
+        div.right-hand=spoiler.price
+      div.spoiler__content-block
+        div.left-hand
+          | Renewal time
+        div.right-hand=spoiler.renewal
+      div.spoiler__content-block
+        div.left-hand
+          | Auto Renewal
+        div.right-hand
+          +penButton("spoiler-pen-button")

@@ -1,0 +1,41 @@
+extends ../root/root.pug
+include ../../components/alert-message/alert-message.pug
+include ../../components/clipboard-input/clipboard-input.pug
+
+block title
+  title Top Up & Balance
+
+block content
+  h2.page-header
+    | Top Up & Balance
+  div.content-block
+    +alertMessage()
+  div.paymentwall-outer
+    div.paymentwall
+      div
+        h2.paymentwall__header
+          | Paymentwall
+        span.paymentwall__text
+          | Parameter key or uid is missing (error code 05)
+  h2.page-header
+    | Recharge code
+  +clipboardInput("15686486648Ey5SoQXDnNOQGODMeumrs81JzjQswKl", "Activate")
+  div.recharges-table
+    table.table-information
+      thead
+        tr
+          th.table-information__title.table-information__code Code
+          th.table-information__title Type
+          th.table-information__title Action
+          th.table-information__title Usage time
+      tbody
+        tr
+          td.table-information__code 15686486648Ey5SoQXDnNOQGODMeumrs81JzjQswKl
+          td Amount recharge
+          td Recharge 1.00 $
+          td 2019-08-22 03:20:33
+        tr
+          td.table-information__code 15686486648Ey5SoQXDnNOQGODMeumrs81JzjQswKl
+          td Amount recharge 
+          td Recharge 3.00 $
+          td 2019-08-22 03:20:33

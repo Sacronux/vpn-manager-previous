@@ -1,0 +1,26 @@
+.pen-button{
+  .hidden:checked + &__text{
+    background-color: #0083B4;
+    color: white;
+    &::before{
+      background: url("../../img/pen-white.svg")
+    }
+  }
+  &__text{
+    position: relative;
+    background-color: #F9F9FA;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 6px 11px 6px 37px;
+    cursor: pointer;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: url("../../img/pen.svg");
+      left: 12px;
+      top: 6px;
+    }
+  }
+}

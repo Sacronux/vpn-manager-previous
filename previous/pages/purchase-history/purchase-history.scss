@@ -1,0 +1,50 @@
+@import "../../variables/_vars.scss";
+.spoilers{
+  display: none;
+}
+
+.spoiler{
+  margin: 5px 1px;
+}
+
+.table-users{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  .pen-button-outer{
+    min-width: 100px;
+  }
+  thead{
+    th{
+      font-weight: 600;
+    }
+  }
+  td, th{
+    padding: 10px;
+    border-bottom: 1px solid #E0E0E0;
+    font-weight: 100;
+    font-size: 12px;
+    color: #34383C;
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #34383C;
+  }
+  tbody{
+    tr:nth-child(even){
+      background-color: #F9F9FA;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile){
+  .table-users{
+    display: none;
+  }
+  .spoilers{
+    display: block;
+  }
+}

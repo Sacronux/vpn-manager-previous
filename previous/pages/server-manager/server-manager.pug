@@ -1,0 +1,190 @@
+extends ../root/root.pug
+include ../../components/clipboard-input/clipboard-input.pug
+
+block title
+  title Server Manager
+  
+block content
+  h2.page-header
+    | Show Nodes
+  table.table-nodes
+    thead.table-nodes__head
+      tr.table-nodes__header
+        th.table-nodes__title.align-left
+          | Name Node
+        th.table-nodes__title
+          | Status
+        th.table-nodes__title
+          | Load
+        th.table-nodes__title.query-hidden
+          | Connections
+        th.table-nodes__title.query-hidden
+          | Rate
+        th.table-nodes__title.query-hidden
+          | Speed Limit
+        th.table-nodes__title.query-hidden
+          | Note
+        th.clear-th
+    tbody
+      tr.table-nodes__row
+        td.table-nodes__chunk.align-left
+          | Japan-1
+        td.table-nodes__chunk
+          | Running
+        td.table-nodes__chunk
+          | N/A
+        td.table-nodes__chunk.query-hidden
+          | 0
+        td.table-nodes__chunk.query-hidden
+          | x1
+        td.table-nodes__chunk.query-hidden
+          | 100 Mbps
+        td.table-nodes__chunk.query-hidden
+          | Tokyo
+        td.clear-t
+      tr.table-nodes__content
+        td(colspan=8)
+          div.table-nodes__information
+            div.table-nodes__information-row
+              div.left-hand
+                | Description:
+              div.right-hand
+                input(type="text", value="No Description").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Address:
+              div.right-hand
+                input(type="text", value="jp.site.ru").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Port
+              div.right-hand
+                input(type="text", value="443").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Alter ID:
+              div.right-hand
+                input(type="text", value="0").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | The user UUID:
+              div.right-hand
+                input(type="text", value="ada4217f-11b6-31da-bd0f-c55d8870e37e").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Protocol:
+              div.right-hand
+                input(type="text", value="tcp").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | VMess link:
+              div.right-hand
+                +clipboardInput("some...", "Copy to Clipboard")
+      tr.table-nodes__row
+        td.table-nodes__chunk.align-left
+          | Hong Kong -1
+        td.table-nodes__chunk
+          | Stopped
+        td.table-nodes__chunk
+          | 30%
+        td.table-nodes__chunk.query-hidden
+          | 32
+        td.table-nodes__chunk.query-hidden
+          | x1
+        td.table-nodes__chunk.query-hidden
+          | Unlimited
+        td.table-nodes__chunk.query-hidden
+          | 
+        td.clear-t
+      tr.table-nodes__content
+        td(colspan=8)
+          div.table-nodes__information
+            div.table-nodes__information-row
+              div.left-hand
+                | Description:
+              div.right-hand
+                input(type="text", value="No Description").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Address:
+              div.right-hand
+                input(type="text", value="jp.site.ru").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Port
+              div.right-hand
+                input(type="text", value="443").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Alter ID:
+              div.right-hand
+                input(type="text", value="0").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | The user UUID:
+              div.right-hand
+                input(type="text", value="ada4217f-11b6-31da-bd0f-c55d8870e37e").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Protocol:
+              div.right-hand
+                input(type="text", value="tcp").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | VMess link:
+              div.right-hand
+                +clipboardInput("some...", "Copy to Clipboard")          
+      tr.table-nodes__row
+        td.table-nodes__chunk.align-left
+          | Japan - 2
+        td.table-nodes__chunk
+          | Offline
+        td.table-nodes__chunk
+          | N/A
+        td.table-nodes__chunk.query-hidden
+          | 0
+        td.table-nodes__chunk.query-hidden
+          | x1
+        td.table-nodes__chunk.query-hidden
+          | 100 Mbps
+        td.table-nodes__chunk.query-hidden
+          | Osaka
+        td.clear-t
+      tr.table-nodes__content
+        td(colspan=8)
+          div.table-nodes__information
+            div.table-nodes__information-row
+              div.left-hand
+                | Description:
+              div.right-hand
+                input(type="text", value="No Description").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Address:
+              div.right-hand
+                input(type="text", value="jp.site.ru").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Port
+              div.right-hand
+                input(type="text", value="443").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Alter ID:
+              div.right-hand
+                input(type="text", value="0").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | The user UUID:
+              div.right-hand
+                input(type="text", value="ada4217f-11b6-31da-bd0f-c55d8870e37e").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | Protocol:
+              div.right-hand
+                input(type="text", value="tcp").table-nodes__input
+            div.table-nodes__information-row
+              div.left-hand
+                | VMess link:
+              div.right-hand
+                +clipboardInput("some...", "Copy to Clipboard")

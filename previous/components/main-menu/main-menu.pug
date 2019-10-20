@@ -1,12 +1,18 @@
 include ../logo/logo.pug
+include ../logo-mobile/logo-mobile.pug
 
-block menu
-  div.main-menu
-    +logo()
-    nav.nav-bar#nav-bar 
+mixin menu()
+  div.main-menu#nav-bar
+    div.nav-header
+      +logo()
+      +logoMobile()
+      div(data-for="nav-bar").burger-close#close-burger
+        div.line.left
+        div.line.right
+    nav.nav-bar
       label.submenu
         input(type="radio", name="menu").hidden
-        span.link.title-submenu Account Manager
+        span.link.title-submenu.account-manager Account Manager
         ul.submenu-list
           li 
             a(href="#").link Home
@@ -16,10 +22,10 @@ block menu
             a(href="#").link Change Password
           li
             a(href="#").link Affiliate
-      a(href="#").link Server Manager
+      a(href="#").link.server-manager Server Manager
       label.submenu
         input(type="radio", name="menu").hidden
-        span.link.title-submenu Manuals
+        span.link.title-submenu.manuals Manuals
         ul.submenu-list
           li 
             a(href="#").link Android
@@ -33,7 +39,7 @@ block menu
             a(href="#").link Mac OS X
       label.submenu
         input(type="radio", name="menu").hidden
-        span.link.title-submenu Store
+        span.link.title-submenu.store Store
         ul.submenu-list
           li 
             a(href="#").link Top Up & Balance
@@ -41,4 +47,4 @@ block menu
             a(href="#").link Package List
           li
             a(href="#").link Purchase history
-      a(href="#").link Support & Help      
+      a(href="#").link.support Support & Help      

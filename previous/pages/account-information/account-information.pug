@@ -1,4 +1,12 @@
-include ../../components/main-menu/main-menu.pug
-include ../../components/logo/logo.pug
+extends ../root/root.pug
 
-block menu
+include ../../components/table-information/table-information.pug
+
+block title
+  title="Account Information"
+  
+block content
+  h2.page-header
+    | Account Information
+  +table()
+    

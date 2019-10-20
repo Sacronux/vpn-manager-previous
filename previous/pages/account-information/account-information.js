@@ -1,2 +1,3 @@
 import "./account-information.scss"
-import "@components/main-menu"
+import "../root"
+import "@components/table-information"

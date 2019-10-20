@@ -1,0 +1,86 @@
+@import "../../variables/_vars.scss";
+
+.price-card{
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25), 0px 4px 15px rgba(0, 0, 0, 0.4);
+  padding: 22px 19px;
+  text-align: center;
+  &__title{
+    font-weight: 600;
+    font-size: 14px;
+    color: #696C6F;
+  }
+  &__price{
+    padding: 11px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+
+    color: #34383C;
+  }
+  &__subtitle{
+    font-size: 14px;
+    color: #696C6F;
+  }
+  &__options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0px;
+    &-block{
+      flex: 1;
+      height: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__block-title{
+    display: block;
+    font-size: 18px;
+    color: #34383C;
+  }
+  &__block-subtitle{
+    display: block;
+    font-size: 10px;
+    color: #696C6F;
+  }
+  &__opportunity{
+    font-size: 10px;
+    color: #34383C;
+    &::before{
+      content: "";
+      display: inline-block;
+      margin-right: 5px;
+      width: 11px;
+      height: 8px;
+      background: url("../../img/opportunity.svg") no-repeat 50% 50%;
+    }
+  }
+  &__buy-button{
+    width: 80%;
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0px;
+    background: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: $mobile-very-small){
+  .price-card{
+    width: 100%;
+  }
+}

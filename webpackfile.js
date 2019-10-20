@@ -72,9 +72,6 @@ module.exports = {
       }
     ]
   },
-  devServer:{
-    contentBase: "build"
-  },
   resolve: {
     alias: {
       "@pages": path.resolve(__dirname, "previous/pages"),

@@ -5,6 +5,75 @@ body{
   padding: 0;
 }
 
+.account-manager{
+  position: relative;
+  &::before{
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    background: url(../../img/account-manager.svg) no-repeat 50% 50%;
+  }
+}
+
+.server-manager{
+  position: relative;
+  &::before{
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    background: url(../../img/server-manager.svg) no-repeat 50% 50%;
+  }
+
+}
+
+.manuals{
+  position: relative;
+  &::before{
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    background: url(../../img/manuals.svg) no-repeat 50% 50%;
+  }
+
+}
+
+.store{
+  position: relative;
+  &::before{
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    background: url(../../img/store.svg) no-repeat 50% 50%;
+  }
+
+}
+
+.support{
+  position: relative;
+  &::before{
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    background: url(../../img/support.svg) no-repeat 50% 50%;
+  }
+
+}
+
 .hidden{
   display: none;
 }
@@ -15,13 +84,13 @@ body{
   min-width: 250px;
   max-width: 300px;
   padding: 25px 45px 0px 20px;
-  height: 100vh;
+  min-height: 100%;
   background-color: $main-color;
   .nav-bar{
     margin-top: 25px;
     padding-top: 25px;
     border-top: 1px solid #14B0E9;
-    padding-left: 25px;
+    padding-left: 35px;
   }
   .link{
     display: block;
@@ -30,11 +99,8 @@ body{
     font-weight: 200;
     font-size: 15px;
     color: white;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 10px;
     cursor: pointer;
-    &:hover{
-      background-color: #0083B4;
-    }
   }
   .submenu-list{
     display: none;
@@ -66,5 +132,67 @@ body{
   }
   .hidden:checked ~ .submenu-list{
     display: block;
+  }
+  .burger-close{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: $mobile){
+  .main-menu.close-menu{
+    left: -100%;
+    transition-duration: 0.5s;
+  }
+
+  .main-menu.open-menu{
+    left: 0;
+    transition-duration: 0.5s;
+  }
+
+  .main-menu{
+    position: fixed;
+    min-width: 100%;
+    z-index: 15;
+    padding: 0px;
+    left: -100%;
+
+
+
+
+    .nav-header{
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-bar{
+      padding: 15px;
+    }
+
+    .burger-close{
+      min-width: 35px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      .left{
+        position: absolute;
+        left: 0;
+        transform: rotate(45deg);
+      }
+      .right{
+        position: absolute;
+        right: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .nav-header{
+      background-color: white;
+    }
   }
 }

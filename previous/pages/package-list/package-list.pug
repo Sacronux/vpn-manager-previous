@@ -1,0 +1,100 @@
+extends ../root/root.pug
+include ../../components/alert-message/alert-message.pug
+include ../../components/price-card/price-card.pug
+
+block title
+  title Package List
+  
+block content
+  h2.page-header
+    | Package List
+  div.content-block
+    +alertMessage()
+  label.spoiler
+    input(type="checkbox").hidden
+    span.spoiler__title Tariffs for China
+    div.spoiler__content
+      label.spoiler.small
+        input(type="radio", name="spoiler-small").hidden
+        span.spoiler__title 1 Month
+        div.spoiler__content
+          +priceCard({
+            "title": "Standart",
+            "price": "10.00$",
+            "subtitle": "100GB / 30 days",
+            "devices": "6pcs",
+            "level": "Lv. 1",
+            "speed": "∞"
+            })
+          +priceCard({
+            "title": "VIP",
+            "price": "20.00$",
+            "subtitle": "400GB / 30 days",
+            "devices": "10pcs",
+            "level": "Lv. 2",
+            "speed": "50 Mbps"
+            })
+          +priceCard({
+            "title": "Lite",
+            "price": "5.00$",
+            "subtitle": "50GB / 30 days",
+            "devices": "3pcs",
+            "level": "Lv. 0",
+            "speed": "∞"
+            })
+      label.spoiler.small
+        input(type="radio", name="spoiler-small").hidden
+        span.spoiler__title 6 Month
+        div.spoiler__content
+          +priceCard({
+            "title": "Standart",
+            "price": "10.00$",
+            "subtitle": "100GB / 30 days",
+            "devices": "6pcs",
+            "level": "Lv. 1",
+            "speed": "∞"
+            })
+          +priceCard({
+            "title": "VIP",
+            "price": "20.00$",
+            "subtitle": "400GB / 30 days",
+            "devices": "10pcs",
+            "level": "Lv. 2",
+            "speed": "50 Mbps"
+            })
+          +priceCard({
+            "title": "Lite",
+            "price": "5.00$",
+            "subtitle": "50GB / 30 days",
+            "devices": "3pcs",
+            "level": "Lv. 0",
+            "speed": "∞"
+            })
+      label.spoiler.small
+        input(type="radio", name="spoiler-small").hidden
+        span.spoiler__title 12 Month
+        div.spoiler__content
+          +priceCard({
+            "title": "Standart",
+            "price": "10.00$",
+            "subtitle": "100GB / 30 days",
+            "devices": "6pcs",
+            "level": "Lv. 1",
+            "speed": "∞"
+            })
+          +priceCard({
+            "title": "VIP",
+            "price": "20.00$",
+            "subtitle": "400GB / 30 days",
+            "devices": "10pcs",
+            "level": "Lv. 2",
+            "speed": "50 Mbps"
+            })
+          +priceCard({
+            "title": "Lite",
+            "price": "5.00$",
+            "subtitle": "50GB / 30 days",
+            "devices": "3pcs",
+            "level": "Lv. 0",
+            "speed": "∞"
+            })

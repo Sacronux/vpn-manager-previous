@@ -1,6 +1,11 @@
 import "./main-menu.scss"
 
-const submenu = document.getElementsByClassName("submenu");
+const submenu = document.getElementsByClassName("submenu"),
+      burgerClose = document.getElementById("close-burger");
+
+burgerClose.addEventListener("click", function(e){
+  document.getElementById(this.dataset.for).className = "main-menu close-menu"
+})
 
 for (let i = 0; i < submenu.length; ++i){
   submenu[i].addEventListener("click", function(e){

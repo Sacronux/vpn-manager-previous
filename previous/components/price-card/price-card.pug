@@ -1,0 +1,33 @@
+mixin priceCard(card)
+  div.price-card
+    h3.price-card__title=card.title
+    div.price-card__price=card.price
+    div.price-card__subtitle=card.subtitle
+    div.price-card__options
+      div.price-card__options-block
+        span.price-card__block-title=card.devices
+        span.price-card__block-subtitle
+          | Number of devices to connect
+      div.price-card__options-block
+        span.price-card__block-title=card.level
+        span.price-card__block-subtitle
+          | VIP
+      div.price-card__options-block
+        span.price-card__block-title=card.speed
+        span.price-card__block-subtitle
+          | Connection speed
+    div.price-card__opportunities
+      span.price-card__opportunity
+        | Unlimited technical support
+      br
+      br
+      span.price-card__opportunity
+        | No speed limits
+      br
+      br
+      span.price-card__opportunity
+        | Guaranteed Internet security
+      br
+      br
+    a(href="#").price-card__buy-button
+        | Buy

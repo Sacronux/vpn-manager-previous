@@ -1,0 +1,56 @@
+extends ../root/root.pug
+include ../../components/pen-button/pen-button.pug
+include ../../components/spoiler/spoiler.pug
+
+block title
+  title Purchase History
+  
+block content
+  h2.page-header
+    | Purchase History
+  table.table-users
+    thead
+      tr
+        th.table-users__title.id ID
+        th.table-users__title.date Date
+        th.table-users__title Product name
+        th.table-users__title Detail
+        th.table-users__title Price
+        th.table-users__title Renewal time
+        th.table-users__title.pen-button-outer Auto renewal
+    tbody
+      tr
+        td.id #1
+        td.date 2019-08-22 03:20:33
+        td Top100
+        td Add traffic 100 GB, speed is not limited
+        td 10$
+        td 2019-08-22 03:20:33
+        td.pen-button-outer
+          +penButton("table-pen-button")
+      tr
+        td.id #2
+        td.date 2019-08-22 03:20:33
+        td Lite
+        td Add traffic 500 GB, 50 Mbps speed
+        td 5$
+        td 2019-08-22 03:20:33
+        td.pen-button-outer 
+          +penButton("table-pen-button")
+  div.spoilers
+    +spoiler({
+      "id": "#1",
+      "date": "2019-08-22 03:20:33",
+      "name": "Top100",
+      "detail": "Add traffic 100 GB, speed is not limited",
+      "price": "10$",
+      "renewal": "2019-08-22 03:20:33"
+      })
+    +spoiler({
+      "id": "#2",
+      "date": "2019-08-22 03:20:33",
+      "name": "Lite",
+      "detail": "Add traffic 500 GB, 50 Mbps speed",
+      "price": "5$",
+      "renewal": "2019-08-22 03:20:33"
+      })

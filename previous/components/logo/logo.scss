@@ -1,8 +1,16 @@
+@import "../../variables/_vars.scss";
+
 .logo{
   display: block;
   height: 50px;
   img{
     display: block;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: $mobile){
+  .logo{
+    display: none;
   }
 }

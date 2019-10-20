@@ -1,0 +1,30 @@
+@import "../../variables/_vars.scss";
+
+.app{
+  display: flex;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  min-height: 100vh;
+}
+
+.content{
+  width: 100%;
+  padding: 0px 30px 50px;
+}
+
+.page-header{
+  margin: 0px;
+  padding: 20px 0px 10px;
+  color: #34383C;
+  font-size: 22px;
+}
+
+mark{
+  font-weight: 600;
+  background-color: #E5E5E5;
+  color: #0083B4;
+  position: relative;
+  margin-right: 3px;
+}

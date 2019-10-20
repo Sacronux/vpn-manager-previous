@@ -1,0 +1,143 @@
+extends ../root/root.pug
+
+
+block title 
+  title Home
+
+block content
+  div.main-content
+    div.tabs
+      div.tabs__tab.activity
+        h2.tabs__title
+          | Your Account
+        span.tabs__subtitle
+          | Usage and statistics
+        br
+        br
+        a(href="#").view-more 
+          | View more
+      div.tabs__tab
+        h2.tabs__title
+          | Announcement
+        span.tabs__subtitle
+          | Important announcements
+        br
+        br
+        a(href="#").view-more 
+          | View more
+      div.tabs__tab
+        h2.tabs__title
+          | Apps and quick settings
+        span.tabs__subtitle
+          | Links to download and configure the app
+        br
+        br
+        a(href="#").view-more 
+          | View more
+    div.pages
+      label.control-button
+        input(type="radio", name="tab", checked="checked").hidden.control-button__input
+        span.control-button__title
+          | Your Account
+        div.chunk-page
+          div.statistic-block
+            div.statistic-block__chunk
+              div.statistic-block__text
+                div.statistic-block__title
+                  | Online / Limit devices
+                div.statistic-block__units
+                  | 2 pcs / 6 devices
+              div.statistic-block__diagram
+                div.line-diagram
+                  div.line-diagram__now.green
+            div.statistic-block__chunk
+              div.statistic-block__text
+                div.statistic-block__title
+                  | Remaining flow traffic
+                div.statistic-block__units
+                  |  1.83 GB / 2.93 GB
+              div.statistic-block__diagram
+                div.line-diagram
+                  div.line-diagram__now.yellow
+            div.statistic-block__chunk
+              div.statistic-block__text
+                div.statistic-block__title
+                  | Traffic was used today
+                div.statistic-block__units
+                  |   1.83 GB
+              div.statistic-block__diagram
+                div.line-diagram
+                  div.line-diagram__now.red
+          div.statistic-block
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Account level 
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  | Free
+                div.statistic-block__right-chunk
+                  a(href="#").view-more
+                    | View more
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Balance 
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  | 0.00$
+                div.statistic-block__right-chunk
+                  a(href="#").view-more
+                    | Recharge
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Sub expiration time 
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  b 55
+                  span 
+                  | days left
+          div.statistic-block
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Last used
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  | Not once
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Last connection
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  | Undefined time
+            div.statistic-block__row.text-statistic
+              div.statistic-block__left-hand
+                | Daily bonus
+              div.statistic-block__right-hand
+                div.statistic-block__left-chunk
+                  | Previous time - 
+                  b 09.02.2019
+                div.statistic-block__right-chunk
+                  a(href="#").view-more Click to get
+      label.control-button
+        input(type="radio", name="tab").hidden.control-button__input
+        span.control-button__title
+          | Announcement
+        div.chunk-page
+          | Another Page
+      label.control-button
+        input(type="radio", name="tab").hidden.control-button__input
+        span.control-button__title
+          | Apps and quick settings
+        div.chunk-page
+          div.manuals
+            div.manuals__tabs
+              div.manuals__tab
+                | Android
+              div.manuals__tab
+                | iOS
+              div.manuals__tab
+                | Windows
+              div.manuals__tab
+                | Linux
+              div.manuals__tab
+                | Mac OS X
+            div.manuals__pages
