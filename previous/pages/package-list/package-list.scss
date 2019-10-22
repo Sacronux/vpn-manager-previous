@@ -16,6 +16,7 @@
     }
   }
   &__title{
+    border-radius: 4px;
     padding: 5px 25px;
     position: relative;
     display: block;
@@ -37,6 +38,7 @@
   &__content{
     display: none;
     padding: 20px;
+    border-radius: 0px 0px 4px 4px;
     background: #F9F9FA;
     border: 1px solid #E0E0E0;
     border-top: none;
@@ -46,6 +48,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+  }
+  .hidden:checked ~ &__title{
+    border-radius: 4px 4px 0px 0px;
   }
 }
 
