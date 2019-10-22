@@ -85,6 +85,7 @@ body{
   padding-left: 25px;
   padding-right: 30px;
   background-color: $main-color;
+  position: relative;
   .nav-header{
     padding: 37px 44px 45px 12px;
   }
@@ -93,6 +94,23 @@ body{
     padding-top: 25px;
     border-top: 1px solid #14B0E9;
     padding-left: 35px;
+  }
+  .nav-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 15px;
+    &__text{
+      margin-top: 25px;
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      font-size: 8px;
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
   .link{
     display: block;

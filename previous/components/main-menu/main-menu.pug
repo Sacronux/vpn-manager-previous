@@ -1,5 +1,6 @@
 include ../logo/logo.pug
 include ../logo-mobile/logo-mobile.pug
+include ../language-panel/language-panel.pug
 
 mixin menu()
   div.main-menu#nav-bar
@@ -48,3 +49,7 @@ mixin menu()
           li
             a(href="#").link Purchase history
       a(href="#").link.support Support & Help      
+    div.nav-footer
+      +languagePanel(["English", "Russian"])
+      span.nav-footer__text
+        | © 2019 VPN Manager | Powered by SSPANEL

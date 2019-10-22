@@ -1,4 +1,6 @@
 import "./main-menu.scss"
+import "@components/language-panel"
+
 
 const submenu = document.getElementsByClassName("submenu"),
       burgerClose = document.getElementById("close-burger");

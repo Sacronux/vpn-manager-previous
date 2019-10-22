@@ -1,0 +1,8 @@
+mixin languagePanel(langs)
+  label.language-panel
+    input(type="checkbox").hidden
+    span.language-panel__view
+      | English
+    div.language-panel__list
+      for item in langs
+        div.language-panel__list-item=item
