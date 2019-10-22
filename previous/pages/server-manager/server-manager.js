@@ -1,6 +1,7 @@
 import "./server-manager.scss"
 import "../root"
 import "@components/clipboard-input"
+import "@components/status-button"
 
 
 const rows = document.getElementsByClassName("table-nodes__row"),

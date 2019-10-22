@@ -30,7 +30,7 @@ for (prop in source){
 }
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   context: path.resolve(__dirname, "./previous/pages"),
   entry: source,
   output: {

@@ -1,0 +1,10 @@
+mixin statusButton(mode)
+  - var theme
+  case mode
+    when "Running"
+      -theme = "running"
+    when "Stopped"
+      -theme = "stopped"
+    when "Offline"
+      -theme = "Offline"
+  div(class="status-button " + theme)=mode

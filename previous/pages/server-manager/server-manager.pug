@@ -1,5 +1,6 @@
 extends ../root/root.pug
 include ../../components/clipboard-input/clipboard-input.pug
+include ../../components/status-button/status-button.pug
 
 block title
   title Server Manager
@@ -30,7 +31,7 @@ block content
         td.table-nodes__chunk.align-left
           | Japan-1
         td.table-nodes__chunk
-          | Running
+          +statusButton("Running")
         td.table-nodes__chunk
           | N/A
         td.table-nodes__chunk.query-hidden
@@ -84,7 +85,7 @@ block content
         td.table-nodes__chunk.align-left
           | Hong Kong -1
         td.table-nodes__chunk
-          | Stopped
+          +statusButton("Stopped")
         td.table-nodes__chunk
           | 30%
         td.table-nodes__chunk.query-hidden
@@ -138,7 +139,7 @@ block content
         td.table-nodes__chunk.align-left
           | Japan - 2
         td.table-nodes__chunk
-          | Offline
+          +statusButton("Offline")
         td.table-nodes__chunk
           | N/A
         td.table-nodes__chunk.query-hidden
