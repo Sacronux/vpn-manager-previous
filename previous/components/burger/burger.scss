@@ -6,7 +6,7 @@
   height: 21px;
 }
 
-@media screen and (max-width: $mobile){
+@media screen and (max-width: $tablet){
   .burger{
     display: flex;
     flex-direction: column;
