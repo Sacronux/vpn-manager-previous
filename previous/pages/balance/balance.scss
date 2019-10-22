@@ -57,6 +57,9 @@
       background-color: #F9F9FA;
     }
   }
+  &__code{
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: $tablet){

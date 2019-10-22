@@ -86,6 +86,12 @@ body{
   padding-right: 30px;
   background-color: $main-color;
   position: relative;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+
   .nav-header{
     padding: 37px 44px 45px 12px;
   }
