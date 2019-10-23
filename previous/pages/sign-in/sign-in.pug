@@ -1,0 +1,38 @@
+include ../../components/logo-mobile/logo-mobile.pug
+
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
+    title Sign in
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap", rel="stylesheet")
+  body
+    div.app
+      form.vpnm-form
+        +logoMobile()
+        span.vpnm-form__title
+          | Sign in to your account
+        input(type="text", placeholder="Email").vpnm-form__input
+        br
+        br
+        input(type="text", placeholder="Password").vpnm-form__input
+        br
+        br
+        button.vpnm-form__button.blue
+          | Sign in
+        br
+        br
+        a(href="#").vpnm-form__link
+          | Reset Password
+        div.vpnm-form__or-decoration
+          div.vpnm-form__hr
+            hr
+          div.vpnm-form__or
+            | or
+          div.vpnm-form__hr
+            hr
+        div.vpnm-form__panel-buttons
+          button.vpnm-form__button.purple
+            | Register
+          button.vpnm-form__button.another-purple
+            | Home
