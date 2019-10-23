@@ -1,3 +1,5 @@
+@import "../../variables/_vars.scss";
+
 body{
   margin: 0;
   padding: 0;
@@ -13,9 +15,6 @@ body{
   box-sizing: border-box;
 }
 
-.logo__image{
-  width: 80%;
-}
 
 .vpnm-form{
   width: 100%;
@@ -96,4 +95,10 @@ body{
   background: #9D41D7;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media screen and (max-width: $tablet){
+  .logo__image{
+    width: 80%;
+  }
 }
