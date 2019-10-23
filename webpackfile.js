@@ -14,7 +14,10 @@ const source = {
   "package-list": "./package-list/package-list.js",
   "purchase-history": "./purchase-history/purchase-history.js",
   "server-manager": "./server-manager/server-manager.js",
-  "support": "./support/support.js"
+  "support": "./support/support.js",
+  "sign-in": "./sign-in/sign-in.js",
+  "sign-up": "./sign-up/sign-up.js",
+  "reset-password": "./reset-password/reset-password.js"
 }
 
 const htmlPaths = [];
