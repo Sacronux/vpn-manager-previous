@@ -1,0 +1,42 @@
+@import "../../variables/_vars.scss";
+
+.vpnm-form{
+  max-width: 694px;
+}
+
+.row-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  .vpnm-form__input,
+  .vpnm-form__button,
+  .container{
+    width: 48%;
+  }
+  .container .vpnm-form__button{
+    max-width: 120px;
+  }
+}
+
+.container{
+  display: flex;
+  .vpnm-form__input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet){
+  .row-inputs{
+    flex-direction: column;
+    margin-bottom: 0px;
+    .container{
+      width: 100%;
+    }
+    .vpnm-form__input,
+    .vpnm-form__button,
+    .container .vpnm-form__input{
+      width: 100%;
+      margin-bottom: 18px;
+    }
+  }
+}

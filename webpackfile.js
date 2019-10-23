@@ -80,7 +80,8 @@ module.exports = {
       "@pages": path.resolve(__dirname, "previous/pages"),
       "@components": path.resolve(__dirname, "previous/components"),
       "@layouts": path.resolve(__dirname, "previous/layouts"),
-      "@img": path.resolve(__dirname, "previous/img")
+      "@img": path.resolve(__dirname, "previous/img"),
+      "@styles": path.resolve(__dirname, "previous/styles")
     }
   },
   plugins: [

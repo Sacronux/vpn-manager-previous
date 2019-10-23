@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131.85deg, #0245A3 -2.09%, #A444E4 87.64%);
+  padding: 100px 15px 0px;
+  box-sizing: border-box;
+}
+
+.vpnm-form{
+  width: 100%;
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 56px 40px;
+  background: #F0F2F4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  &__title{
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #34383C;
+    padding: 33px 0px 23px;
+  }
+  &__input{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 11px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+  }
+  &__button{
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  &__link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #0083B4;
+    text-decoration: none;
+  }
+  &__or-decoration{
+    display: flex;
+    padding: 30px 0px;
+  }
+  &__hr{
+    flex: 1;
+  }
+  &__or{
+    padding: 0px 33px;
+  }
+  &__panel-buttons{
+    display: flex;
+  }
+}
+
+.blue{
+  background: #0175EC;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.purple{
+  background: #A644E5;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.another-purple{
+  background: #9D41D7;
+  font-size: 14px;
+  line-height: 19px;
+}
