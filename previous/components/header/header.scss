@@ -3,7 +3,7 @@
 .header{
   padding: 25px 10px 35px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   border-bottom: 1px solid #E0E0E0;
   .menu-outer{
     display: flex;
@@ -12,11 +12,8 @@
   }
 }
 
-@media screen and (max-width: $mobile-small){
+@media screen and (max-width: $tablet){
   .header{
-    justify-content: flex-end;
-    .logo-mobile{
-      display: none;
-    }
+    justify-content: space-between;
   }
 }
