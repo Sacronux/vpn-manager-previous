@@ -1,6 +1,10 @@
 include ../user-button/user-button.pug
 include ../burger/burger.pug
+include ../logo-mobile/logo-mobile.pug
+
 mixin header()
   div.header
-    +userButton()
-    +burger("nav-bar")
+    +logoMobile()
+    div.menu-outer
+      +userButton()
+      +burger("nav-bar")

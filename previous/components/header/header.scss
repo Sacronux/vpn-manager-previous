@@ -1,6 +1,22 @@
+@import "../../variables/_vars.scss";
+
 .header{
   padding: 25px 10px 35px 10px;
   display: flex;
-  justify-content: flex-end;
-  border-bottom: 1px solid #E0E0E0;;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+  .menu-outer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: $mobile-small){
+  .header{
+    justify-content: flex-end;
+    .logo-mobile{
+      display: none;
+    }
+  }
 }
