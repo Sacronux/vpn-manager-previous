@@ -1,5 +1,5 @@
 extends ../root/root.pug
-
+include ../../components/clipboard-input/clipboard-input.pug
 
 block title 
   title Home
@@ -130,7 +130,7 @@ block content
         div.chunk-page
           div.manuals
             div.manuals__tabs
-              div.manuals__tab
+              div.manuals__tab.active
                 | Android
               div.manuals__tab
                 | iOS
@@ -141,3 +141,38 @@ block content
               div.manuals__tab
                 | Mac OS X
             div.manuals__pages
+              input(type="radio", name="manuals-input").hidden.manuals__input
+              div.manuals__page
+                |Download from Google Play
+                br
+                |Direct link to Shadowsocks For Android
+                br
+                br
+                |1. Download and install from Google Play or download by direct link apk.
+                br
+                |2. After installation, start the application and click on the add server icon in the upper right. Choose Scan QR code, or Import from Clipboard*. QR-Code and the "Copy Settings" button for each server are in your personal account.
+                br
+                |3. Select the desired server and connect to it on the button in the center. Add the rest of the servers on the same principle.*
+                br
+                b More fine tuning of the program:
+                br
+                |4. Click the "pencil" located on the right. Disable the "IPv6 Route" option. Instagram with this option may not work.
+                br
+                |5. Select Bypass LAN & mainland China in the "Route" option.
+                br
+                |6. Enable option Send DNS over UDP.
+                br
+                br
+                +clipboardInput("https://vpnm.org/link/yDaCe2e6TfliMN4J?mu=2", "Copy to Clipboard")
+              input(type="radio", name="manuals-input").hidden.manuals__input
+              div.manuals__page
+                | iOS
+              input(type="radio", name="manuals-input").hidden.manuals__input
+              div.manuals__page
+                | Windows
+              input(type="radio", name="manuals-input").hidden.manuals__input
+              div.manuals__page
+                | Linux
+              input(type="radio", name="manuals-input").hidden.manuals__input
+              div.manuals__page
+                | Mac OS X

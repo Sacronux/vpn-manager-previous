@@ -166,6 +166,39 @@
   background: #FF1111;
 }
 
+.manuals{
+
+  &__tabs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .active{
+    background: white;
+    border-bottom: white 1px solid;
+  }
+
+  &__tab{
+    padding: 13px 73px;
+    background: #F9F9FA;
+    border: 1px solid #E0E0E0;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    flex: 1;
+    text-align: center;
+  }
+
+  &__page{
+    display: none;
+    padding: 56px 26px 44px;
+    border: 1px solid #E4E4E4;
+  }
+
+  .hidden:checked + &__page{
+    display: block;
+  }
+
+}
 
 
 @media screen and (max-width: $mobile){
