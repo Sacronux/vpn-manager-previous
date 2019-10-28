@@ -15,6 +15,7 @@
       margin-bottom: -1px;
       background: #F9F9FA;
       border: 1px solid #E0E0E0;
+      border-radius: 4px 0px 0px 4px;
     }
 
     .activity{
@@ -22,13 +23,6 @@
       border-right: 1px solid white;
     }
 
-    .first{
-      border-radius: 4px 0px 0px 0px;
-    }
-
-    .last{
-      border-radius: 0px 0px 0px 4px;
-    }
 
     &__title{
       margin: 0;
