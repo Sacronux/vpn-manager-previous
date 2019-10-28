@@ -22,6 +22,14 @@
       border-right: 1px solid white;
     }
 
+    .first{
+      border-radius: 4px 0px 0px 0px;
+    }
+
+    .last{
+      border-radius: 0px 0px 0px 4px;
+    }
+
     &__title{
       margin: 0;
       margin-bottom: 5px;
