@@ -121,10 +121,10 @@
   &::after{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 35%;
-    right: 0;
+    width: 7px;
+    height: 7px;
+    top: 45%;
+    right: 5px;
     border-bottom: 2px solid #000000;
     border-right: 2px solid #000000;
     transform: rotate(45deg);
@@ -205,6 +205,7 @@
   .main-content{
     .pages{
       border: none;
+      padding: 26px 10px;
     }
   }
   .tabs{

@@ -3,17 +3,21 @@ import "../root"
 import "@components/clipboard-input"
 
 const tabs = document.getElementsByClassName("tabs__tab"),
-      buttons = document.getElementsByClassName("control-button__input");
+      buttons = document.getElementsByClassName("control-button");
 
-buttons[0].checked = true;
+buttons[0].children[0].checked = true;
 
 for (let i = 0; i < tabs.length; ++i){
   tabs[i].addEventListener("click", function(){
-    buttons[i].checked = true;
+    buttons[i].children[0].checked = true;
     document.getElementsByClassName("activity")[0].className = "tabs__tab";
     this.className = "tabs__tab activity";
   });
-  buttons[i].addEventListener("change", function(){
+  buttons[i].addEventListener("click", function(e){
+    if (buttons[i].children[0].checked && e.target.tagName == "SPAN"){
+      buttons[i].children[0].checked = false;
+      e.preventDefault();
+    }
     document.getElementsByClassName("activity")[0].className = "tabs__tab";
     tabs[i].className = "tabs__tab activity";
   })

@@ -30,3 +30,9 @@ mark{
   padding-left: 3px;
   padding-right: 3px;
 }
+
+@media screen and (max-width: $mobile){
+  .content{
+    padding: 0 10px !important;
+  }
+}
