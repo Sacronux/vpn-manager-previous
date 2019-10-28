@@ -13,15 +13,15 @@ html
         span.vpnm-form__title
           | Enter your email
         div.row-inputs
-          input(type="text", placeholder="Email").vpnm-form__input
-          input(type="text", placeholder="Your Name").vpnm-form__input
+          input(type="text", placeholder="Email").vpnm-form__input.required-input
+          input(type="text", placeholder="Your Name").vpnm-form__input.required-input
         div.row-inputs
-          input(type="text", placeholder="Password").vpnm-form__input
-          input(type="text", placeholder="Confirm password").vpnm-form__input
+          input(type="text", placeholder="Password").vpnm-form__input.required-input
+          input(type="text", placeholder="Confirm password").vpnm-form__input.required-input
         div.row-inputs
           div.container
             input(type="text", placeholder="Verification Code").vpnm-form__input
-            a(href="#").vpnm-form__button.blue
+            a(href="#", data-enabled=false)#send-code.vpnm-form__button.disabled
               | Send
           a(href="#").vpnm-form__button.blue
             | Confirm

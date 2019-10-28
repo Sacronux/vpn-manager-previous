@@ -55,6 +55,9 @@ body{
     line-height: 19px;
     color: #0083B4;
     text-decoration: none;
+    &:hover{
+    color: #005879;
+    }
   }
   &__or-decoration{
     display: flex;
@@ -81,18 +84,37 @@ body{
   border-radius: 2px;
   font-size: 16px;
   line-height: 22px;
+  &:hover{
+  background: #0261C2;
+  }
 }
 
 .purple{
   background: #A644E5;
   font-size: 14px;
   line-height: 19px;
+  &:hover{
+  background: #831EC2;
+  }
 }
 
 .another-purple{
   background: #9D41D7;
   font-size: 14px;
   line-height: 19px;
+  &:hover{
+  background: #831EC2;
+  }
+}
+
+.disabled{
+  background-color: #C4C4C4;
+  cursor: default;
+}
+
+.clicked{
+  background: #9DDFF7;
+  color: #8C8C8C; 
 }
 
 @media screen and (max-width: $mobile-very-small){

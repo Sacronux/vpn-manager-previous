@@ -11,7 +11,7 @@
     padding: 8px 0px;
     border-bottom: 1px solid #EDEDED;
     font-size: 12px;
-    
+
     .lefthand-row{
       width: 28%;
       display: flex;
@@ -22,6 +22,19 @@
 
     .righthand-row{
       width: 72%;
+      display: flex;
+      flex-wrap: wrap;
+      .table-information__input{
+        flex: 1;
+        min-width: 0;
+      }
+      .button{
+        display: inline-block;
+        padding: 10px 33px;
+        background-color: #31B7E9;
+        border-radius: 0px 4px 4px 0px;
+        color: white;
+      }
     }
   }
 
