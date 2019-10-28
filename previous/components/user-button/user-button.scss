@@ -28,6 +28,7 @@ body{
 
   .hidden:checked ~ .menu{
     display: block;
+    z-index: 1;
   }
 
   .menu{
