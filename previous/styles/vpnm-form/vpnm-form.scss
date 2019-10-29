@@ -37,7 +37,7 @@ body{
     padding: 10px 11px;
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
-    border-radius: 2px;
+    border-radius: 2px 0px 0px 2px;
     color: #34383C;
   }
   &__button{
@@ -81,7 +81,7 @@ body{
 
 .blue{
   background: #0175EC;
-  border-radius: 2px;
+  border-radius: 0px 4px 4px 0px;
   font-size: 16px;
   line-height: 22px;
   &:hover{
@@ -110,11 +110,17 @@ body{
 .disabled{
   background-color: #C4C4C4;
   cursor: default;
+  border-radius: 0px 2px 2px 0px;
+  border: 1px solid #e0e0e0;
+  border-left-width: 0;
 }
 
 .clicked{
   background: #9DDFF7;
-  color: #8C8C8C; 
+  color: #8C8C8C;
+  border-radius: 0px 2px 2px 0px;
+  border: 1px solid #e0e0e0;
+  border-left-width: 0;
 }
 
 @media screen and (max-width: $mobile-very-small){

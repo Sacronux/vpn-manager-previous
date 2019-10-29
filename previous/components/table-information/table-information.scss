@@ -34,6 +34,8 @@
         background-color: #31B7E9;
         border-radius: 0px 4px 4px 0px;
         color: white;
+        border: 1px solid #e7e7e7;
+        border-left-width: 0;
       }
     }
   }
@@ -45,7 +47,19 @@
     border-radius: 4px;
     padding: 10px 16px;
     font-size: 12.5px;
-  }
+  
+  &__bonus{
+    width: 100%;
+    background: #FAFAFB;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px 0px 0px 4px;
+    padding: 10px 16px;
+    font-size: 12.5px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+  }}
 
   &__text{
     font-family: Roboto, "Open Sans", sans-serif;
