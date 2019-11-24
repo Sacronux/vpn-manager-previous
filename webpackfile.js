@@ -44,7 +44,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: "babel-loader"
+        use: "babel-loader",
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,
@@ -54,13 +55,15 @@ module.exports = {
           "css-loader",
           "postcss-loader",
           "sass-loader"
-        ]
+        ],
+        exclude: /node_modules/
       },
       {
         test: /\.pug$/,
         use: {
           loader: "pug-loader"
-        }
+        },
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -71,7 +74,8 @@ module.exports = {
             outputPath: "/img/",
             publicPath: "../img"
           }
-        }
+        },
+        exclude: /node_modules/
       }
     ]
   },
