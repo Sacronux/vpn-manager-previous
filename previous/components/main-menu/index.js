@@ -16,6 +16,8 @@ for (let i = 0; i < submenu.length; ++i){
         e.stopPropagation();
         e.preventDefault();
     }
-    document.getElementsByClassName("language-panel")[0].children[0].checked = false;
+    if (document.body.offsetWidth < 648){
+      document.getElementsByClassName("language-panel")[0].children[0].checked = false;
+    }
   })
 }
